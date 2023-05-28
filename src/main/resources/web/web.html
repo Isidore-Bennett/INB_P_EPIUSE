@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="web.css">
+</head>
+<body>
+<div class="main">
+    <div id="deck-container"></div>
+    <div id="hand-strength"></div>
+    <div id="hand-container"></div>
+    <div id="button-container">
+        <div>
+            <button id="new-deck" onclick="newDeck()" onmouseover="">New Deck</button>
+        </div>
+        <div>
+            <button id="shuffle" onclick="shuffle()">Shuffle</button>
+        </div>
+        <div>
+            <button id="draw" onclick="draw()">Draw</button>
+        </div>
+    </div>
+    <div id="game-select-container">
+    </div>
+</div>
+
+<script src="logic/web.js"></script>
+<script src="service/cardService.js"></script>
+<script src="service/deckService.js"></script>
+<script src="service/handService.js"></script>
+<script src="service/gameService.js"></script>
+<script src="logic/logic.js"></script>
+<script src="util/util.js"></script>
+<script src="consts.js"></script>
+</body>
+</html>
